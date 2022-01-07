@@ -13,7 +13,7 @@ body {
   height: 150%;
 }
 
-.section-title h2 {
+.section-title {
   font-size: 50px;
   flex: 1 30%;
   border: 5px solid red;
@@ -106,18 +106,29 @@ header nav ul li a:hover {
 
 /* About Me section style start */
 
-.about-me-text p {
-  display: inline;
-  line-height: 1.5;
-  width: 10%;
-  font-size: 20px;
+.about-me-section {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.about-me-img {
+  flex: 1 12%;
+  margin-right: 20px;
   border: 5px solid red;
 }
 
-.about-me-text img {
-  height: 20%;
-  width: 20%;
-  border: 5px solid red;
+.about-me-img img {
+  max-width: 100%;
+}
+
+.about-me-text {
+  flex: 12;
+}
+
+.about-me-text p {
+  font-size: 18px;
 }
 
 /* About Me section style end */
@@ -132,7 +143,10 @@ header nav ul li a:hover {
   size: 20px;
 }
 
-.first-project img {
+.first-project-link {
+}
+
+.first-project-link img {
   margin: 20px;
   min-width: 30%;
   max-width: 60%;
@@ -158,5 +172,20 @@ header nav ul li a:hover {
 /* Work section style end */
 
 /* Contact Me section style start */
+
+.contact-me-section {
+  flex: 2 70%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.contact-information {
+  flex: 12;
+}
+
+.contact-info {
+  font-size: 18px;
+}
 
 /* Contact Me section style end */
