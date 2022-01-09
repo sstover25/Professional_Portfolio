@@ -508,13 +508,18 @@ header nav ul li a:focus {
 /* Media query for mobile phones and smaller */
 
 @media screen and (max-width: 575px) {
+  header h1 {
+    font-weight: bold;
+    font-size: 40px;
+  }
+
   header nav ul {
     padding: 0 10px;
   }
 
   header nav ul li a {
-    padding: 100px 15px;
-    font-size: 16px;
+    padding: 0px 15px;
+    font-size: 15px;
   }
 
   header nav ul li a:hover {
