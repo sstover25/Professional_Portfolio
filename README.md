@@ -2,6 +2,11 @@
 
 ## Description
 
+```
+This is the first professional portfolio I've made as a web developer-in-training. It uses HTML and CSS. It contains my first application as well as placeholders for upcoming applications.
+
+```
+
 ## User Story
 
 ```
@@ -14,13 +19,36 @@ SO THAT I can review samples of their work and assess whether they're a good can
 ## Acceptance Criteria
 
 ```
-It is done when I have
+- It is done when I have included my name, a recent photo, and links to sections about me, my work, and how to contact me.
+
+- It is done when I have created functionality that lets users click on a link in the navigation bar and it takes them to that section on the webpage.
+
+- It is done when I have created functionailty that, when they click on the link to the section about my work, it takes users to a section with titled images of my applications.
+
+- It is done when I have made my first application's image larger in size than the others.
+
+- It is done when I have created functionality that lets users click on the images of the applications, which then takes the users to that deployed application.
+
+- It is done when I have created a responsive layout that adapts to the users viewport size.
 ```
 
 ## Review
 
-- The URL of the deployed application: https://sstover25.github.io/Horiseon-accessibility-challenge/
+- The URL of the deployed application: https://sstover25.github.io/Professional_Portfolio/
 
-- The URL of the GitHub repository: https://github.com/sstover25/Horiseon-accessibility-challenge
+- The URL of the GitHub repository: https://github.com/sstover25/Professional_Portfolio
+
+```
+
+## Credits
+
+```
+
+Hero image copyright of NASA (access via Unsplash): https://unsplash.com/photos/Q1p7bh3SHj8
+
+Coding assistance from KU bootcamp modules, https://www.w3schools.com, https://developer.mozilla.org/, and Stack Overflow.
+
+```
 
 ---
+```
