@@ -91,7 +91,7 @@ header nav ul li a:focus {
 /* Hero style start */
 
 .hero {
-  background-image: url("../images/hero_copyright-NASA-on-Unsplash.jpg");
+  background-image: url("../images/hero_copyright-NASA-on-Unsplash.jpg"); /* Image copyright of NASA via Unsplash */
   height: 15%;
   background-position: center;
   background-size: cover;
@@ -105,10 +105,8 @@ header nav ul li a:focus {
 
 .hero-subtitle {
   font-size: 48px;
-  text-align: center;
   position: relative;
   top: 35%;
-  left: 10%;
   color: white;
   background-color: transparent;
 }
@@ -151,7 +149,9 @@ header nav ul li a:focus {
 /* Work section style start */
 
 .work-section {
+  flex: 2 50%;
   display: flex;
+  flex-wrap: wrap;
   margin: 50px 0 0 0;
 }
 
@@ -160,10 +160,6 @@ header nav ul li a:focus {
   padding: 175px 0;
   width: min-content;
   height: 50%;
-}
-
-.work-links {
-  color: white;
 }
 
 .work-name {
@@ -188,6 +184,11 @@ header nav ul li a:focus {
   padding: 0 0 0px 0;
 }
 
+.first-project a img {
+  width: 1000px;
+  height: 500px;
+}
+
 .first-project a img,
 .second-project a img,
 .third-project a img {
@@ -209,6 +210,12 @@ header nav ul li a:focus {
 
 .first-work-name {
   bottom: 150px;
+}
+
+.second-project a img,
+.third-project a img {
+  width: 450px;
+  height: 250px;
 }
 
 .second-project,
@@ -243,9 +250,9 @@ header nav ul li a:focus {
 /* Contact Me section style start */
 
 .contact-me-section {
+  flex: 2 50%;
   display: flex;
   flex-wrap: wrap;
-  flex: 2 70%;
 }
 
 .contact-me-section h2 {
@@ -253,22 +260,258 @@ header nav ul li a:focus {
 }
 
 .contact-information {
-  flex: 12;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 
 .contact-info {
   font-size: 30px;
   width: auto;
-  padding: 25px 80px;
-  margin: 0 55px;
+  padding: 25px 10px;
   text-decoration: none;
   color: white;
 }
 
 .contact-info:hover {
-  border-top: 3px solid white;
-  border-top-left-radius: 30px;
-  border-top-right-radius: 30px;
+  border-bottom: 3px solid white;
+  border-bottom-left-radius: 35px;
+  border-bottom-right-radius: 35px;
+}
+
+.contact-info:focus {
+  border: 1px solid rgb(5, 5, 5);
+  border-radius: 30px;
+  background-color: white;
+  color: rgb(5, 5, 5);
 }
 
 /* Contact Me section style end */
+
+/*Media query for mid- to smaller desktop screens and smaller */
+
+@media screen and (max-width: 1428px) {
+  .first-project a img {
+    width: 900px;
+    height: 500px;
+  }
+
+  .second-project a img,
+  .third-project a img {
+    width: 400px;
+    height: 200px;
+  }
+}
+
+/*Media query for mid- to smaller desktop screens and smaller */
+
+@media screen and (max-width: 1286px) {
+  .first-project a img {
+    width: 750px;
+    height: 400px;
+  }
+
+  .second-project a img,
+  .third-project a img {
+    width: 300px;
+    height: 150px;
+  }
+
+  .second-work-name,
+  .third-work-name {
+    bottom: 100px;
+  }
+}
+
+/*Media query for mid- to smaller desktop screens and smaller */
+
+@media screen and (max-width: 1071px) {
+  .first-project a img {
+    width: 625px;
+    height: 300px;
+  }
+
+  .second-project a img,
+  .third-project a img {
+    width: 300px;
+    height: 150px;
+  }
+
+  .second-project {
+    margin: -30px 10px 0 0;
+  }
+
+  .third-project {
+    margin: -30px 0 0 10px;
+  }
+
+  .second-work-name,
+  .third-work-name {
+    bottom: 90px;
+    font-size: 20px;
+  }
+}
+
+/* Media query for smaller desktop screens and smaller */
+
+@media screen and (max-width: 980px) {
+  header {
+    padding-bottom: 0;
+    justify-content: center;
+    position: relative;
+    z-index: 5;
+  }
+
+  header h1 {
+    width: 100%;
+    text-align: center;
+  }
+
+  header nav ul {
+    margin-top: 20px;
+    width: 100%;
+    justify-content: center;
+  }
+
+  header nav ul li a {
+    font-size: 20px;
+  }
+
+  .section-title {
+    width: 80%;
+  }
+
+  .about-me-section {
+    flex: 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-me-section h2 {
+    margin: 0;
+    padding: 110px 0 0 10vmin;
+    width: 5vmin;
+    height: auto;
+    position: relative;
+    bottom: 0;
+    flex: 1 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .about-me-section img {
+    flex: 1 100%;
+    height: 350px;
+    width: 300px;
+    max-width: 30%;
+    margin: 20px 20px 0 20px;
+    border-radius: 50px;
+  }
+
+  .about-me-section p {
+    color: white;
+    flex: 12;
+    font-size: 18px;
+    width: 10px;
+    height: 400px;
+    padding: 125px 0 0 0;
+  }
+
+  .about-me-section p {
+    padding: 50px 0 0 0;
+  }
+
+  .work-section {
+    flex: 2 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 150px 0 -150px 0;
+  }
+
+  .work-section h2 {
+    margin: 0;
+    padding: 270px 0 0 10vmin;
+    width: 5vmin;
+    height: auto;
+    position: relative;
+    bottom: 775px;
+    flex: 2 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .first-project a img {
+    width: 525px;
+    height: 220px;
+  }
+
+  .second-project a img,
+  .third-project a img {
+    width: 230px;
+    height: 100px;
+  }
+
+  .second-project {
+    margin: -30px 10px 0 0;
+  }
+
+  .third-project {
+    margin: -30px 0 0 10px;
+  }
+
+  .first-work-name {
+    bottom: 50px;
+    font-size: 20px;
+  }
+
+  .second-work-name,
+  .third-work-name {
+    bottom: 60px;
+    font-size: 15px;
+  }
+
+  .second-work-name span,
+  .third-work-name span {
+    font-size: 13px;
+  }
+
+  .contact-me-section h2 {
+    margin: -150px 0 80px 0;
+  }
+
+  .contact-info {
+    font-size: 20px;
+    padding: 0 10px 0 10px;
+  }
+}
+
+/* Media query for tablets and smaller */
+
+@media screen and (max-width: 768px) {
+  .about-me-section img {
+    flex: 1 100%;
+    height: 275px;
+    width: 300px;
+    max-width: 30%;
+    margin: 20px 20px 0 20px;
+    border-radius: 50px;
+  }
+}
+
+/* Media query for mobile phones and smaller */
+
+@media screen and (max-width: 575px) {
+  .section-title {
+    width: 95%;
+  }
+
+  .about-me-section img {
+    flex: 1 100%;
+    height: 225px;
+    width: 300px;
+    max-width: 30%;
+    margin: 20px 20px 0 20px;
+    border-radius: 50px;
+  }
+}
