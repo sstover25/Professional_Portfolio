@@ -518,8 +518,9 @@ header nav ul li a:focus {
   }
 
   header nav ul li a {
-    padding: 0px 15px;
+    padding: 0;
     font-size: 15px;
+    width: min-content;
   }
 
   header nav ul li a:hover {
