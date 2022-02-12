@@ -38,6 +38,14 @@ images of the applications, which then takes the users to that deployed applicat
 - It is done when I have created a responsive layout that adapts to the users viewport size.
 ```
 
+The following image demonstrates the application functionality in a browser:
+![An app window with the title The Portfolio of Shannon Stover. There is a navigation bar that lists links to the following sections: About Me, My Work, Contact Me, and Resume.](./assets/images/Professional_Portfolio_demo.jpg)
+
+The following image demonstrates the application functionality on mobile:
+![An app window with the title The Portfolio of Shannon Stover. There is a navigation bar that lists links to the following sections: About Me, My Work, Contact Me, and Resume.](./assets/images/Professional_Portfolio_demo_mobile.jpg)
+
+```
+
 ## Review
 
 - The URL of the deployed application: https://sstover25.github.io/Professional_Portfolio/
@@ -57,4 +65,7 @@ Coding assistance from KU bootcamp modules, https://www.w3schools.com, https://d
 ```
 
 ---
+
+```
+
 ```
