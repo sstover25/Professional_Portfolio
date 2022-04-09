@@ -184,8 +184,9 @@ header nav ul li a:focus {
   left: 30px;
   z-index: 2;
   width: 200px;
+  min-width: fit-content;
   background-color: var(--tertiary-color);
-  padding: 0 0 0 20px;
+  padding: 0 20px 0 20px;
   margin: 0 0 0 -30px;
 }
 
